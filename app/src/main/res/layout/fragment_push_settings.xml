@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Bark -->
+        <TextView
+            style="@style/SectionHeader"
+            android:text="@string/bark_section" />
+
+        <Switch
+            android:id="@+id/switchBark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/bark_enable" />
+
+        <EditText
+            android:id="@+id/etBarkServer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bark_server_hint"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/etBarkKey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bark_key_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/bark_level_label"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spBarkLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etBarkSound"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/bark_sound_hint"
+            android:inputType="text" />
+
+        <!-- Webhook -->
+        <TextView
+            style="@style/SectionHeader"
+            android:layout_marginTop="24dp"
+            android:text="@string/webhook_section" />
+
+        <Switch
+            android:id="@+id/switchWebhook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/webhook_enable" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/webhook_platform_label"
+            android:textSize="13sp" />
+
+        <Spinner
+            android:id="@+id/spWebhookPlatform"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etWebhookUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/webhook_url_hint"
+            android:inputType="textUri" />
+
+        <EditText
+            android:id="@+id/etWebhookSecret"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/webhook_secret_hint"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etWebhookHeaders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:hint="@string/webhook_headers_hint"
+            android:inputType="textMultiLine"
+            android:minLines="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/saved_hint"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

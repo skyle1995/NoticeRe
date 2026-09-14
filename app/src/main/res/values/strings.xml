@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NoticeRe</string>
+    <string name="subtitle">利用 Root 将短信、未接来电、通知转发到 Webhook / Bark</string>
+    <string name="notif_listener_label">NoticeRe 通知转发</string>
+
+    <!-- 状态 -->
+    <string name="status_section">运行状态</string>
+    <string name="root_ok">Root：已获取 ✓</string>
+    <string name="root_no">Root：未获取（点击「检测 Root」授权）</string>
+    <string name="notif_ok">通知使用权：已授权 ✓</string>
+    <string name="notif_no">通知使用权：未授权</string>
+    <string name="btn_check_root">检测 Root</string>
+    <string name="btn_grant_notif">授权通知使用权</string>
+    <string name="tab_status">运行状态</string>
+    <string name="tab_forward">转发设置</string>
+    <string name="tab_push">推送设置</string>
+    <string name="tab_template">模板设置</string>
+
+    <!-- 模板设置 -->
+    <string name="template_section">消息模板</string>
+    <string name="template_sms_title">短信标题</string>
+    <string name="template_sms_body">短信内容</string>
+    <string name="template_call_title">未接来电标题</string>
+    <string name="template_call_body">未接来电内容</string>
+    <string name="template_notif_title">通知标题</string>
+    <string name="template_notif_body">通知内容</string>
+    <string name="template_reset">重置默认</string>
+    <string name="template_reset_done">已重置为默认模板</string>
+    <string name="template_hint">可用参数：\n{type} 类型　{number} 号码　{content} 内容　{time} 时间\n{sim} SIM号码　{app} 应用名　{package} 包名</string>
+    <string name="service_running">前台服务：运行中 ✓</string>
+    <string name="service_stopped">前台服务：未运行（开启短信/未接来电转发后自动启动）</string>
+    <string name="log_section">运行日志</string>
+    <string name="log_clear">清空日志</string>
+    <string name="log_empty">暂无日志</string>
+
+    <!-- 转发内容 -->
+    <string name="forward_section">转发内容</string>
+    <string name="sms_label">短信转发</string>
+    <string name="call_label">未接来电转发</string>
+    <string name="notif_label">通知转发</string>
+    <string name="notif_filter_label">通知包名过滤（逗号分隔，留空 = 全部）</string>
+    <string name="notif_filter_hint">例如 com.tencent.mm, com.eg.android.AlipayGphone</string>
+    <string name="notif_keyword_label">通知关键词白名单（逗号分隔，匹配标题/正文，留空 = 全部）</string>
+    <string name="notif_keyword_hint">例如 验证码, 到账</string>
+    <string name="sms_number_hint">短信号码白名单（逗号分隔，留空 = 全部）</string>
+    <string name="sms_keyword_hint">短信关键词白名单（逗号分隔，留空 = 全部）</string>
+    <string name="call_number_hint">来电号码白名单（逗号分隔，留空 = 全部）</string>
+
+    <!-- Bark -->
+    <string name="bark_section">Bark</string>
+    <string name="bark_enable">启用 Bark</string>
+    <string name="bark_server_hint">服务器地址，默认 https://api.day.app</string>
+    <string name="bark_key_hint">Bark 设备 Key</string>
+    <string name="bark_level_label">推送级别</string>
+    <string name="bark_sound_hint">提示音（如 alarm / payattention，留空 = 默认）</string>
+
+    <!-- Webhook -->
+    <string name="webhook_section">Webhook</string>
+    <string name="webhook_enable">启用 Webhook</string>
+    <string name="webhook_platform_label">平台</string>
+    <string name="webhook_url_hint">Webhook 地址（含 access_token / key）</string>
+    <string name="webhook_secret_hint">加签密钥（钉钉/飞书机器人，留空 = 不加签）</string>
+    <string name="webhook_headers_hint">自定义 Header（仅「通用」平台，每行一个 Key: Value）</string>
+
+    <!-- 操作 -->
+    <string name="btn_save">保存并应用</string>
+    <string name="btn_test">发送测试消息</string>
+    <string name="saved">已保存并应用</string>
+    <string name="test_sent">测试消息已加入发送队列</string>
+
+    <string name="tip">提示：短信与未接来电通过 Root 读取系统数据库，无需授予短信/通话权限；通知需在系统「通知使用权」中授权本应用。建议在系统设置中允许自启动，并关闭本应用的电池优化。</string>
+    <string name="saved_hint">提示：修改后请点击底部「保存并应用」。</string>
+    <string name="notif_tip">提示：通知转发需先在「运行状态」页授权通知使用权；此处可设置包名/关键词白名单（留空 = 全部）。</string>
+
+    <!-- 前台服务 -->
+    <string name="fgs_channel_name">转发服务</string>
+    <string name="fgs_title">NoticeRe 转发中</string>
+    <string name="fgs_text">正在监听短信、未接来电与通知</string>
+</resources>

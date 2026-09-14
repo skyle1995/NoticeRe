@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+.gradle-home/
+.idea/
+build/
+local.properties
+signing.properties
+.DS_Store
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+
+# Kotlin 编译错误日志
+.kotlin/
