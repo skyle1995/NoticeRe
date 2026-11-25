@@ -2,6 +2,8 @@
 
 利用 Root 权限，把安卓设备上的 **短信、未接来电、应用通知** 实时转发到 **Bark** 和/或 **Webhook** 的小工具。
 
+> 仓库地址：<https://github.com/skyle1995/NoticeRe>
+
 - 短信、未接来电：通过 Root 直接读取系统私有 SQLite 数据库（`mmssms.db` / `calllog.db`），**无需**授予 `READ_SMS` / `READ_CALL_LOG` 等敏感权限，也无需设为默认短信应用。
 - 通知：通过系统唯一的正规渠道 `NotificationListenerService` 捕获，需用户在「通知使用权」中授权。
 - 支持按 **号码 / 关键词** 白名单过滤。
@@ -27,6 +29,11 @@
 - 构建：Android Studio（JBR 21 / JDK 17+）
 
 ## 构建
+
+```bash
+git clone https://github.com/skyle1995/NoticeRe.git
+cd NoticeRe
+```
 
 用 Android Studio 打开本项目直接运行，或在命令行：
 
